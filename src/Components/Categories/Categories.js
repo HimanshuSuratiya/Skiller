@@ -2,8 +2,42 @@ import React from "react";
 import Images from "../../Images/Image";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Slider from "react-slick";
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, background: "red", borderRadius: '5px', height: '25px', width: '30px', alignItems: 'center', justifyContent: 'center', display: 'flex' }}
+            onClick={onClick}
+        />
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, background: "green", borderRadius: '5px', height: '25px', width: '30px', alignItems: 'center', justifyContent: 'center', display: 'flex' }}
+            onClick={onClick}
+        />
+    );
+}
 
 const Categories = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        spaceBetween: 90,
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+    };
+
     return (
         <>
             <section class="categoriesSection aon-categories-area">
@@ -23,65 +57,64 @@ const Categories = () => {
                         <div class="col-md-12">
                             <div class="p-t80">
                                 <div class="swiper categories">
-                                    <div class="swiper-wrapper">
+                                    <Slider {...settings}>
                                         <div class="swiper-slide">
-                                            <a href="#!" class="teamImg">
-                                                <img src={Images.one} />
+                                            <a href="#!" class="teamImg" style={{ height: '228px', width: '226px', display: 'inline-block' }}>
+                                                <img src={Images.one} style={{ height: '100%', width: '100%' }} />
                                             </a>
                                             <div class="member-info">
                                                 <h3>Food & Drink</h3>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="#!" class="teamImg">
-                                                <img src={Images.two} />
+                                            <a href="#!" class="teamImg" style={{ height: '228px', width: '226px', display: 'inline-block' }}>
+                                                <img src={Images.two} style={{ height: '100%', width: '100%' }} />
                                             </a>
                                             <div class="member-info">
                                                 <h3>Plumber</h3>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="#!" class="teamImg">
-                                                <img src={Images.three} />
+                                            <a href="#!" class="teamImg" style={{ height: '228px', width: '226px', display: 'inline-block' }}>
+                                                <img src={Images.three} style={{ height: '100%', width: '100%' }} />
                                             </a>
                                             <div class="member-info">
                                                 <h3>Cleaning Services</h3>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="#!" class="teamImg">
-                                                <img src={Images.four} />
+                                            <a href="#!" class="teamImg" style={{ height: '228px', width: '226px', display: 'inline-block' }}>
+                                                <img src={Images.four} style={{ height: '100%', width: '100%' }} />
                                             </a>
                                             <div class="member-info">
-                                                <h3>Yoga Classes</h3>
+                                                <h3>Cleaning Services</h3>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="#!" class="teamImg">
-                                                <img src={Images.five} />
+                                            <a href="#!" class="teamImg" style={{ height: '228px', width: '226px', display: 'inline-block' }}>
+                                                <img src={Images.five} style={{ height: '100%', width: '100%' }} />
                                             </a>
                                             <div class="member-info">
-                                                <h3>Salon & Spa</h3>
+                                                <h3>Cleaning Services</h3>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="#!" class="teamImg">
-                                                <img src={Images.six} />
+                                            <a href="#!" class="teamImg" style={{ height: '228px', width: '226px', display: 'inline-block' }}>
+                                                <img src={Images.six} style={{ height: '100%', width: '100%' }} />
                                             </a>
                                             <div class="member-info">
-                                                <h3>Gym</h3>
+                                                <h3>Cleaning Services</h3>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="#!" class="teamImg">
-                                                <img src={Images.seven} />
+                                            <a href="#!" class="teamImg" style={{ height: '228px', width: '226px', display: 'inline-block' }}>
+                                                <img src={Images.seven} style={{ height: '100%', width: '100%' }} />
                                             </a>
                                             <div class="member-info">
-                                                <h3>Transport</h3>
+                                                <h3>Cleaning Services</h3>
                                             </div>
                                         </div>
-
-                                    </div>
+                                    </Slider>
                                     <div class="categoriesControler">
                                         <div class="swiper-button-next"><ArrowBackIcon style={{ cursor: 'pointer' }} /></div>
                                         <div class="swiper-button-prev"><ArrowForwardIcon style={{ cursor: 'pointer' }} /></div>
