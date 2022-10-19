@@ -1,5 +1,5 @@
 import React from "react";
-import Images from "../../Images/Image";
+import Images from "../../../Images/Image";
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import CategoryIcon from '@mui/icons-material/Category';
 import PublicIcon from '@mui/icons-material/Public';

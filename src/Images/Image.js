@@ -12,6 +12,9 @@ import four from "./4.jpg";
 import five from "./5.jpg";
 import six from "./6.jpg";
 import seven from "./7.jpg";
+import text from "./step/text.png";
+import admin from "./step/admin.png";
+import brainBulb from "./step/brainbulb.png";
 
 const Images = {
     Logo,
@@ -28,6 +31,9 @@ const Images = {
     five,
     six,
     seven,
+    text,
+    admin,
+    brainBulb,
 };
 
 export default Images;
