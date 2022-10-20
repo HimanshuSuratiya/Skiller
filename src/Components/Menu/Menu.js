@@ -1,5 +1,4 @@
 import React from "react";
-import "../../Css/custom.css";
 import Images from "../../Images/Image";
 import PersonIcon from '@mui/icons-material/Person';
 import AddIcon from '@mui/icons-material/Add';

@@ -3,6 +3,8 @@ import Banner from "../Components/HomeScreenComponents/Banner/Banner";
 import Categories from "../Components/HomeScreenComponents/Categories/Categories";
 import Menu from "../Components/Menu/Menu";
 import HowItWork from "../Components/HomeScreenComponents/HowItWork/HowItWork";
+import Vendor from "../Components/HomeScreenComponents/Vendor/Vendor";
+import StaticsCount from "../Components/HomeScreenComponents/Statics-counter/StaticsCounter";
 
 const HomePage = () => {
     return (
@@ -12,6 +14,8 @@ const HomePage = () => {
                 <Banner />
                 <Categories />
                 <HowItWork />
+                <Vendor />
+                <StaticsCount />
             </div>
         </>
     )

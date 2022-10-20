@@ -2503,3 +2503,7 @@ a.navbar-brand {
 #navArea.is-sticky {
   background: #8fc1e2;
 }
+
+.slick-slide {
+  padding: 30px;
+}
