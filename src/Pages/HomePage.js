@@ -5,6 +5,7 @@ import Menu from "../Components/Menu/Menu";
 import HowItWork from "../Components/HomeScreenComponents/HowItWork/HowItWork";
 import Vendor from "../Components/HomeScreenComponents/Vendor/Vendor";
 import StaticsCount from "../Components/HomeScreenComponents/Statics-counter/StaticsCounter";
+import Profile from "../Components/Profile/Profile";
 
 const HomePage = () => {
     return (
@@ -16,6 +17,7 @@ const HomePage = () => {
                 <HowItWork />
                 <Vendor />
                 <StaticsCount />
+                <Profile />
             </div>
         </>
     )
